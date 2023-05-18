@@ -5,6 +5,9 @@
     outline: none;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+body{
+    background: black;
+}
 .nav{
     width: 100vw;
     margin: 0 auto;
@@ -13,10 +16,12 @@
     flex-direction: column;
 }
 .section{
-    background:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(/blog/science-1182713_1920.jpg)
+    background:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(science-1182713_1920.jpg)
     center no-repeat;
     background-size: cover;
     width: 60%;
+    /* height: 100vh; */
+    top: -11%;
     margin: 0 auto;
     position: relative;
     align-items: center;
@@ -78,4 +83,24 @@
 }
 .counter{
     margin: 0.1em 0;
+}
+.handles{
+    position: relative;
+    width: 20%;
+    top: 60%;
+    left: 0;
+    box-sizing: border-box;
+}
+.handles .socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+.handles .socials svg{
+    padding: 4px;
+}
+.handles h3{
+    color: orangered;
+    text-align: center;
 }
